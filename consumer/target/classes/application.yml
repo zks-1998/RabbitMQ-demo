@@ -1,0 +1,10 @@
+spring:
+  rabbitmq:
+    host: 192.168.10.128
+    port: 5672
+    virtual-host: /
+    username: itcast
+    password: 123321
+    listener:
+      simple:
+        prefetch: 1 # 只能预先取得1条消息，处理完成才可以接下一条
